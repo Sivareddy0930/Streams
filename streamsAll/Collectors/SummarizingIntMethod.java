@@ -12,7 +12,7 @@ public class SummarizingIntMethod {
 		
 		IntSummaryStatistics s=i.collect(Collectors.summarizingInt(Integer::intValue));
 		System.out.println(s);
-		
+		//IntSummaryStatistics   interface consist of following methods like getCount(),.........
 		System.out.println(s.getCount());
 		System.out.println(s.getMax());
 		System.out.println(s.getAverage());

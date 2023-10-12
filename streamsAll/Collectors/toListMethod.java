@@ -1,3 +1,4 @@
+
 package streamsAll.Collectors;
 
 import java.util.List;

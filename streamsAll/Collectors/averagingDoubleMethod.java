@@ -7,7 +7,24 @@ public class averagingDoubleMethod {
 
 	public static void main(String[] args) {
 		
+		
+		//Stream<Double> al=Stream.of(1.2,2.2,3.2,4.2);
+		//The data is stored as Double objects, which are the wrapper class for the primitive data type double. In this case, the Stream contains elements of type Double because you explicitly specified Double
+		
+		
+		//Stream al=Stream.of(1.2,2.2,3.2,4.2);
+		//The data is stored as primitive double values, not as wrapper classes like Integer. In this case, since you provided decimal numbers with a decimal point (e.g., 1.2, 2.2, etc.), the stream contains elements of type double, which is a primitive data type in Java.
+		
+		
+		
+		
+		//-----------------------------------------------------------------------------------
+		
 		Stream<Double> al=Stream.of(1.2,2.2,3.2,4.2);
+		//The data is stored as Double objects, which are the wrapper class for the primitive data type double. In this case, the Stream contains elements of type Double because you explicitly specified Double
+		
+		
+		
 		Double d=al.collect(Collectors.averagingDouble(Double::valueOf));
 //		Double d=al.collect(Collectors.averagingDouble(Double::doubleValue));  //both are same
 			System.out.println(d);

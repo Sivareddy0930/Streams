@@ -37,9 +37,9 @@ public class toMapMethod3 {
 //			LinkedHashMap::new    ====>() -> new LinkedHashMap<>()   
 			
 			
-			//LinkedHashMap::new is a suppiler function that is used to supplies a mutabile container to store the result.
+			//LinkedHashMap::new is a supplier function that is used to supplies a mutable container to store the result.
 					//to maintain order we used LinkedHashMap::new here .
-					//after sorting it may have chance of changing oredr because map dont follow order .but LinkedHashMap can follow.
+					//after sorting it may have chance of changing order because map don't follow order .but LinkedHashMap can follow.
 			System.out.println(m3);
 	}
 

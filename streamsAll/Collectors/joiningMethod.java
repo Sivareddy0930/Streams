@@ -8,7 +8,7 @@ public class joiningMethod {
 	public static void main(String[] args) {
 				
 		Stream<String> s=Stream.of("siva","hunny","tunny","kunny");
-		
+		//Returns a Collector that concatenates the input elements into a String, in encounter order.
 		String s1=s.collect(Collectors.joining(","));
 							//joining(CharSequence delimiter)
 		
