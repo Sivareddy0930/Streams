@@ -25,17 +25,20 @@ public class IntStreamAverageMethod {
 		
 		OptionalDouble op=a.mapToInt(Integer::intValue).average();
 				//mapToInt() method return type is IntStream so we can use method like average().
+		
+		
+		
 		//Here average() method return type is OptionalDouble
 		System.out.println(op);
 		//to retrieve data from Optional types we use method like getAsInt(),getAsDouble().
 		System.out.println(op.getAsDouble());
 		
 		//------------------------------------------------------------------------------------------------
-		
-		//we can use orElse() at last to provied alternative value .
+		System.out.println();
+		//we can use orElse() at last to provide alternative value .
 		
 		//orElse() applicable for only Optional Return Types.
-		//Here avarage() method return type is OptionalDouble so we can use orElse() here.
+		//Here average() method return type is OptionalDouble so we can use orElse() here.
 		
 		Stream<Integer> a1=Stream.of(1,2,3,4);
 		double op1=a1.mapToInt(Integer::intValue).average().orElse(0.0);
