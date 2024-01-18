@@ -16,7 +16,7 @@ public class sortedMethodExample {
 		al.add("AAAA");
 		al.add("AAA");
 		
-			// i want to sort based on length of string and if length of two strings is same then sort it based on naturalsorting order.
+			// i want to sort based on length of string and if length of two strings is same then sort it based on natural sorting order.
 			//solution:-
 		//Here custom sorting is required.
 		

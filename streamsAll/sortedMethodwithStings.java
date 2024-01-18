@@ -26,16 +26,16 @@ public class sortedMethodwithStings {
 		System.out.println(l1);
 		
 		//Default sorting...using comparator....compare method.
-		//here we use compareTo() method inside of Comapre() method
-		//comapre(i,j){i.compareTo(j);}======>(i,j)->i.compareTo(j)
+		//here we use compareTo() method inside of Compare() method
+		//Compare(i,j){i.compareTo(j);}======>(i,j)->i.compareTo(j)
 		List l3=al.stream().sorted((i,j)->i.compareTo(j)).collect(Collectors.toList());
 		System.out.println(l3);
 							
 		
 		//-------------------------------------------------------------------------------------------------------------------------
 		
-		//custom sorting oredre using comparator.
-		//it has comapre method.
+		//custom sorting order using comparator.
+		//it has compare method.
 		//sorted(Comparator)
 		
 		//(i,j)->(i<j)?+1:(i>j)?-1:0 =========> this is pure lambda representation of compare() method.
@@ -44,7 +44,7 @@ public class sortedMethodwithStings {
 				
 //		List l2=al.stream().sorted((i,j)->(i<j)?+1:(i>j)?-1:0).collect(Collectors.toList());
 //		System.out.println(l2);
-		//*******************This approch not appliacble for Strings. we have to use comapteTo()
+		//*******************This approach not applicable for Strings. we have to use comapteTo()
 		//descending order
 		
 		

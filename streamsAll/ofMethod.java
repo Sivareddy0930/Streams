@@ -6,9 +6,9 @@ import java.util.stream.*;
 public class ofMethod {
 	
 	//Non terminal or intermediate methods.
-	//filter(Predicate),map(Function),flatMap(Function),sorted(),sorted(Comparetor),distinct(),limit(long l),skip(long l).
+	//filter(Predicate),map(Function),flatMap(Function),sorted(),sorted(Comparator),distinct(),limit(long l),skip(long l).
 	
-	//remainin all are terminal methods.
+	//Remaining all are terminal methods.
 
 	public static void main(String[] args) {
 		
@@ -25,7 +25,8 @@ public class ofMethod {
 				
 						
 						Integer[] g=al.stream().toArray(Integer[]::new);
-						//In this case, you are using a method reference (Integer[]::new) to specify the type of the resulting array. This means that the toArray method will create a new array of type Integer[] to hold the elements from the stream.
+						//In this case, you are using a method reference (Integer[]::new) to specify the type of the resulting array. 
+						//This means that the toArray method will create a new array of type Integer[] to hold the elements from the stream.
 						
 						System.out.println(Arrays.toString(g));
 						
@@ -39,10 +40,6 @@ public class ofMethod {
 						System.out.println("normal stream :-");
 						
 						Stream.of(10,20,30,40,50).forEach(System.out::println);
-				
-					
-				
-							
 							
 	}
 

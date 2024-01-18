@@ -34,8 +34,8 @@ public class sortedMethod {
 		
 		//-------------------------------------------------------------------------------------------------------------------------
 		
-		//custom sorting oredre using comparator.
-		//it has comapre method.
+		//custom sorting order using comparator.
+		//it has compare method.
 		//sorted(Comparator)
 		
 		//(i,j)->(i<j)?+1:(i>j)?-1:0 =========> this is pure lambda representation of compare() method.

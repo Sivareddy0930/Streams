@@ -6,9 +6,9 @@ import java.util.stream.*;
 public class AllMethodswithFilter {
 	
 	//Non terminal or intermediate methods.
-	//filter(Predicate),map(Function),flatMap(Function),sorted(),sorted(Comparetor),distinct(),limit(long l),skip(long l).
+	//filter(Predicate),map(Function),flatMap(Function),sorted(),sorted(Comparator),distinct(),limit(long l),skip(long l).
 	
-	//remainin all are terminal methods.
+	//Remaining all are terminal methods.
 
 	public static void main(String[] args) {
 		
@@ -109,7 +109,7 @@ public class AllMethodswithFilter {
 				System.out.println("min value:-");
 				
 		//min()
-				Optional o=al.stream().min(Comparator.comparing(Integer::intValue));//it sort in ascending order. and then first min  value is 9.
+				Optional o=al.stream().min(Comparator.comparing(Integer::intValue));//it sort in ascending order. and then first minimum  value is 9.
 				System.out.println(o);
 				
 				
@@ -120,9 +120,9 @@ public class AllMethodswithFilter {
 				
 		//max()
 				//Optional o2=al.stream().max((i,j)->i.compareTo(j));
-				Optional o2=al.stream().max(Comparator.comparing(Integer::intValue));//it sort in ascending order. and then first max value is 90.
+				Optional o2=al.stream().max(Comparator.comparing(Integer::intValue));//it sort in ascending order. and then max value is 90.
 				System.out.println(o2);
-						
+						 
 				
 				//The largest values are evaluated based on the passed Comparator argument.
 				
@@ -148,7 +148,7 @@ public class AllMethodswithFilter {
 
 				List<Integer> p2=al.stream().map(a->a+2).sorted().skip(4).collect(Collectors.toList());//default natrual sorting order.
 					System.out.println(p2);
-					//it skip the specified number of elemnts.
+					//it skip the specified number of elements.
 					
 					
 					
@@ -159,10 +159,7 @@ public class AllMethodswithFilter {
 						Object[] gg=al.stream().toArray();
 //						System.out.println(gg);
 						System.out.println(Arrays.toString(gg));
-				
-					
-				
-							
+		
 							
 	}
 
