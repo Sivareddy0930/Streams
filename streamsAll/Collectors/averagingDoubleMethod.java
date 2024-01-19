@@ -26,6 +26,7 @@ public class averagingDoubleMethod {
 		
 		
 		Double d=al.collect(Collectors.averagingDouble(Double::valueOf));
+//		Double d=al.collect(Collectors.averagingDouble(n->n));
 //		Double d=al.collect(Collectors.averagingDouble(Double::doubleValue));  //both are same
 			System.out.println(d);
 			
@@ -36,7 +37,7 @@ public class averagingDoubleMethod {
 				System.out.println(d1);
 				
 				Stream<Long> a2=Stream.of(1234L,3123L);
-				Double d2=a2.collect(Collectors.averagingDouble(Long::valueOf));
+				Double d2=a2.collect(Collectors.averagingLong(Long::valueOf));
 				//returns Double because average means double value.
 					System.out.println(d2);
 					

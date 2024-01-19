@@ -26,7 +26,7 @@ public class ofMethod {
 						
 						Integer[] g=al.stream().toArray(Integer[]::new);
 						//In this case, you are using a method reference (Integer[]::new) to specify the type of the resulting array. 
-						//This means that the toArray method will create a new array of type Integer[] to hold the elements from the stream.
+						//MapToInt.javaThis means that the toArray method will create a new array of type Integer[] to hold the elements from the stream.
 						
 						System.out.println(Arrays.toString(g));
 						
