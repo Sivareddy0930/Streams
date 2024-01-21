@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 
 
 //Employee class is in another file.in same package.
-//classname is Employee
+//class name is Employee
 
 public class toMapMethod3 {
 

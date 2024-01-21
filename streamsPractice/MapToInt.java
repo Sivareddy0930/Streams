@@ -16,6 +16,13 @@ public class MapToInt {
 		List<Integer> list = Arrays.stream(arr).boxed().collect(Collectors.toList());
 		//converted form int to Integer type and stored in List.
 		System.out.println(list);
+		
+		
+//		-----------------------------------------------------------
+		long l=Stream.of("10","20","30","40")
+				.mapToInt(n ->Integer.parseInt(n)).sum();
+		//converted form Integer to int type and stored in array.
+		System.out.println(l);
 	}
 
 }

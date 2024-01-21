@@ -43,7 +43,9 @@ public class Intstream {
 //		int value6 = al.stream().collect(Collectors.summingInt(n->n));
 //		System.out.println(value6);
 		
-		 IntStream.range(0, 10).forEach(System.out::println);
+		 IntStream.range(0,9).forEach(System.out::println);
+		 
+		 System.out.println("sum of numbers:-"+IntStream.range(0,5).sum());
 		 
 	}
 

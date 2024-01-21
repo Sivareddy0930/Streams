@@ -1,4 +1,4 @@
-package streamsPractice;
+package streamsPractice.CollectorsMethods;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,13 +22,19 @@ public class CollectorsMethods {
 		System.out.println(d1);
 		
 		long l=Arrays.stream(arr).count();
+		//we are counting from intStream
 		System.out.println(l);
 		
 		long l1=Stream.of(1,2,3,4,5).count();
+		//we are counting from Stream
 		System.out.println(l1);
 		
 		long l2=Stream.of(1,2,3,4,5,6,7,8,9,10).collect(Collectors.counting());
+		//we are counting from Stream using collectors methods.
 		System.out.println(l2);
+		
+		
+		
 		
 	}
 

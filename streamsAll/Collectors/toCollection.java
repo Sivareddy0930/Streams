@@ -12,6 +12,9 @@ public class toCollection {
 		
 		Stream<Integer> a=Stream.of(1,2,3,4,5,9,7,5,8,1,4);
 		
+		Collection b=a.collect(Collectors.toCollection(ArrayList::new));
+		System.out.println(b);
+		
 		LinkedList<Integer> a1=a.collect(Collectors.toCollection(LinkedList::new));
 		System.out.println(a1);
 		
