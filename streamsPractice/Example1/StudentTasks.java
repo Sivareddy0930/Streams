@@ -1,6 +1,8 @@
 package streamsPractice.Example1;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.DoubleSummaryStatistics;
 import java.util.List;
@@ -9,6 +11,8 @@ import java.util.Set;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class StudentTasks {
 
@@ -83,6 +87,8 @@ public class StudentTasks {
 			
 			Map<String,List<Student>> groups= list.stream().collect(Collectors.groupingBy(Student::getSubject));
 			System.out.println(groups);
+			
+	
 
 	}
 
